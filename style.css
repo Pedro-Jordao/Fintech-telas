@@ -5,6 +5,21 @@ body {
 .container {
     min-height: 100vh;
     max-width: 370px;
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .container {
+        max-width: 100vw;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 420px;
+    }
 }
 
 .card {
@@ -22,6 +37,16 @@ body {
     letter-spacing: -1px;
 }
 
+@media (max-width: 600px) {
+    .fs-3.fw-bold {
+        font-size: 1.3rem !important;
+    }
+}
+
+.chart-bar {
+    height: 100px;
+}
+
 .chart-bar .bar {
     width: 18px;
     background: #4f23e2;
@@ -30,8 +55,14 @@ body {
     transition: background 0.2s;
 }
 
-.chart-bar .bar:hover {
-    background: #3a17a7;
+@media (max-width: 600px) {
+    .chart-bar {
+        height: 60px !important;
+    }
+    .chart-bar .bar {
+        width: 12px;
+        margin: 0 2px;
+    }
 }
 
 .btn-primary {
@@ -49,6 +80,13 @@ body {
 
 .btn {
     border-radius: 12px;
+}
+
+@media (max-width: 600px) {
+    .btn {
+        font-size: 0.95rem;
+        padding: 0.7rem 0.5rem;
+    }
 }
 
 .card .text-secondary.small {
@@ -80,5 +118,11 @@ a.text-primary {
     }
     .card-body {
         padding: 1rem 0.7rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 500px;
     }
 }
