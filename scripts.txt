@@ -18,3 +18,12 @@ git commit -m "Criando readme.md"
 
 # Envia os commits locais para o repositório remoto no GitHub
 git push origin main
+
+# Adiciona todas as alterações ao staging do Git
+git add .
+
+# Cria um commit com a mensagem "melhorando responsividade do projeto"
+git commit -m "melhorando responsividade do projeto"
+
+# Envia os commits locais para o repositório remoto no GitHub
+git push origin main
