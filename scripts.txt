@@ -1,0 +1,20 @@
+# Inicializa um novo repositório Git na pasta atual
+git init
+
+# Cria um repositório no GitHub chamado Fintech-telas, público, usando a CLI do GitHub (sem usar interface gráfica do GitHub)
+gh repo create Fintech-telas --public
+
+# Cria um commit inicial com a mensagem "project created"
+git commit -m "project created"
+
+# Cria um commit com a mensagem "responsividade" (após implementar responsividade)
+git commit -m "responsividade"
+
+# Adiciona todas as alterações ao staging do Git
+git add .
+
+# Cria um commit com a mensagem "Criando readme.md" (após criar ou editar o README)
+git commit -m "Criando readme.md"
+
+# Envia os commits locais para o repositório remoto no GitHub
+git push origin main
